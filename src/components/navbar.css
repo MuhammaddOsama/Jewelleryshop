@@ -12,3 +12,27 @@
     object-fit: cover;
 
 }
+
+@media(max-width:567px){
+    .navbar img{
+        width: 200px;
+        height: 50px;
+    }
+    .navbar-toggler{
+        background-color: yellow;
+        width: 50px;
+        height: 50px;
+    }
+ 
+    .nav-item {
+        padding: 10px 0;
+    }
+    .navbar input{
+        width: 230px;
+        height:30px;
+    }
+    .navbar button{
+        width: 80px;
+        height: 30px ;
+    }
+}
