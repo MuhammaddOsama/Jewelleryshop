@@ -1,0 +1,34 @@
+.Abouth1{
+     color: #ffa808d5;
+     margin: 50px; 
+}
+.Aboutcontainer{
+    background-color: black;
+    padding-bottom: 100px;
+
+}
+.Abouth2{
+    color:#ffa808d5 ;
+}
+.AboutP{
+    color: white;
+    padding-left: 150px;
+    padding-right: 150px;
+    text-align: justify;
+    
+}
+.About a{
+    font-size: 30px;
+    color:#ffa808d5 ;
+    margin: 10px;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    
+}
+a:hover{
+    color:#9a9a9a;
+    transform: scale(1.1);
+}
+.Followmore{
+    padding-top: 80px;
+}

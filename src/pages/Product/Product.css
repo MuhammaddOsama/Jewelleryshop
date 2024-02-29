@@ -1,0 +1,20 @@
+.Producth1{
+    color:#ffa808d5;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    ;
+}
+.card-body{
+    background-color: black;
+    text-color: yellow;
+}
+.card{
+    box-shadow: 10px 10px #adb5bd;
+    margin: 20px;
+}
+.card:hover{
+    /* transform: translateY(10px); */
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out;
+}

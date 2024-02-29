@@ -1,0 +1,14 @@
+.nav-item{
+    padding-left: 50px !important;
+    
+}
+.nav-link:hover{
+    background-color: hwb(39 3% 0% / 0.836);
+    transition: 0.5s ease-in-out;
+    border-radius: 10px;
+    
+}
+.header__logo-image{
+    object-fit: cover;
+
+}
