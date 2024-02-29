@@ -1,92 +1,129 @@
 import React from 'react'
 import "./Contactus.css"
 const Contactus = () => {
-  
+
   return (
-    
-    <>
-    <h1 ClassName='contactush1'>contactus</h1>
-<div className="container">
-
-<form onSubmit={Loginform}>
-<input type='text'placeholder='Enter your Email'></input>
-<br></br>
-<br></br>
-<input type='text'placeholder='Enter your  Password'></input>
-<br></br>
-<br></br>
-<button type='submit'>Submit</button>
-
-</form>
-
-
-{/* <form class="row g-3">
-  <div class="col-md-4">
-    <label for="validationServer01" class="form-label">First name</label>
-    <input type="text" class="form-control is-valid" id="validationServer01" value="Mark" required />
-    <div class="valid-feedback">
-      Looks good!
-    </div>
-  </div>
-  <div class="col-md-4">
-    <label for="validationServer02" class="form-label">Last name</label>
-    <input type="text" class="form-control is-valid" id="validationServer02" value="Otto" required />
-    <div class="valid-feedback">
-      Looks good!
-    </div>
-  </div>
-  <div class="col-md-4">
-    <label for="validationServerUsername" class="form-label">Username</label>
-    <div class="input-group has-validation">
-      <span class="input-group-text" id="inputGroupPrepend3">@</span>
-      <input type="text" class="form-control is-invalid" id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required />
-      <div id="validationServerUsernameFeedback" class="invalid-feedback">
-        Please choose a username.
-      </div>
-    </div>
-  </div>
-  <div class="col-md-6">
-    <label for="validationServer03" class="form-label">City</label>
-    <input type="text" class="form-control is-invalid" id="validationServer03" aria-describedby="validationServer03Feedback" required />
-    <div id="validationServer03Feedback" class="invalid-feedback">
-      Please provide a valid city.
-    </div>
-  </div>
-  <div class="col-md-3">
-    <label for="validationServer04" class="form-label">State</label>
-    <select class="form-select is-invalid" id="validationServer04" aria-describedby="validationServer04Feedback" required>
-      <option selected disabled value="">Choose...</option>
-      <option>...</option>
-    </select>
-    <div id="validationServer04Feedback" class="invalid-feedback">
-      Please select a valid state.
-    </div>
-  </div>
-  <div class="col-md-3">
-    <label for="validationServer05" class="form-label">Zip</label>
-    <input type="text" class="form-control is-invalid" id="validationServer05" aria-describedby="validationServer05Feedback" required />
-    <div id="validationServer05Feedback" class="invalid-feedback">
-      Please provide a valid zip.
-    </div>
-  </div>
-  <div class="col-12">
-    <div class="form-check">
-      <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required />
-      <label class="form-check-label" for="invalidCheck3">
-        Agree to terms and conditions
-      </label>
-      <div id="invalidCheck3Feedback" class="invalid-feedback">
-        You must agree before submitting.
-      </div>
-    </div>
-  </div>
-  <div class="col-12">
-    <button class="btn btn-primary" type="submit">Submit form</button>
-  </div>
-</form> */}
-</div>
-    </>
+     <>
+     
+      <div className="contact_us">
+        <div className="container">
+           <div className="row justify-content-center">
+            <div className="col-lg-6">
+              <form className='form'>
+                <h2>Contact us</h2>
+                <div className="mb-5">
+                  <input type='text' className="form-control text-white bg-transparent border-warning"name="name" placeholder='Enter Your Name...' />
+                </div>
+                <div className="mb-5">
+                  <input type='text' className="form-control text-white bg-transparent border-warning"name="email" placeholder='Enter Your Email...' />
+                </div>
+                <div className="mb-5">
+                  <textarea type='text' className="form-control text-white bg-transparent border-warning"name="text" placeholder='Text here ...' />
+                </div>
+                <input className="submit " onClick={()=>alert('Form submitted Successfully')} type='submit' />
+              </form>
+            </div>
+           </div>
+        </div>
+        </div>    
+     </>
   )
 }
 
 export default Contactus
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import React, { useState } from 'react'
+// import "./Contactus.css"
+// const Contactus = () => {
+ 
+//   const [email,Setemail] = useState('');
+//   const [password,Setpassword] = useState('');
+
+//   const [err,SetErr] = useState(false);
+//   const [passerr,SetpassErr] = useState(false);
+//   function LoginForm(e){
+// if(email.length <5 || password.length < 8){
+//   alert("please fill form in a right way");
+// }else{
+//   console.log(email);
+//   console.log(password);
+//   alert("Thanks for Submission");
+// }
+//     e.preventDefault();
+//   }
+//   function emailthandler(e){
+// //console.log(e.target.value.length)
+// let element = e.target.value;
+// if(element.length <5){
+//  // console.log("minimum 5 letters required");
+// SetErr(true);
+// }
+// else{ 
+// SetErr(false);
+// }
+// Setemail(element)
+//   }
+ 
+//   function passhandler(e){
+//     //console.log(e.target.value.length)
+//     let element = e.target.value;
+//     if(element.length <8){
+//      // console.log("minimum 5 letters required");
+//     SetpassErr(true);
+//     }
+//     else{ 
+//     SetpassErr(false);
+//     }
+//    Setpassword(element)
+//       }
+//   return (
+    
+//     <>
+//     <h1 ClassName='contactush1'>contactus</h1>
+// <div className="container">
+
+// <form onSubmit={LoginForm}>
+// <input type='text'placeholder='Enter your Email' onChange={emailthandler}></input>
+// {err ? <span>minimum 5 letters required!!!</span> : <spaan></spaan>}
+// <br></br>
+// <br></br>
+// <input type='text'placeholder='Enter your  Password' onChange={passhandler}></input>
+// {passerr ? <span>minimum 8 letters required!!!</span> : <spaan></spaan>}
+// <br></br>
+// <br></br>
+// <button type='submit'>Submit</button>
+
+// </form>
+// </div>
+//     </>
+//   )
+// }
+
+// export default Contactus

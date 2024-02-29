@@ -18,6 +18,7 @@ import img15 from "../../images/15.jpg"
 const Product = () => {
   return (
     <>
+    <div id='product'>
     <h1 className='Producth1'>Our products</h1>
     <div className="container">
         <div className='row'>
@@ -181,6 +182,7 @@ const Product = () => {
             </div>
         </div>
         
+    </div>
     </div>
     </>
   )

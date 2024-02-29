@@ -2,6 +2,9 @@ import React from 'react'
 import img from "../images/1.jpg"
 import "./Home.css"
 import { FaArrowRight } from "react-icons/fa";
+import Product from './Product/Product';
+import About from './About/About'
+
  const Home = () => {
   return (
   <>
@@ -20,6 +23,8 @@ import { FaArrowRight } from "react-icons/fa";
         
       </div>  
         </div>
+        <Product />
+        <About />
   </>
   )
 }

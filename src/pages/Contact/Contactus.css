@@ -1,3 +1,36 @@
-.contactush1{
+.contact_us{
+    padding: 100px;
+   
+}
+
+.form{
+    background-color: #000;
+    opacity: 0.8;
+    border-radius: 10px;
+    padding: 50px;
+    border: 5px solid #ffa808d5 ;
+}
+.form-control{
+    font-size: 20px; 
+     
+}
+.form-control:focus{
+    /* outline: none; */
+     box-shadow: none; 
+    border: 1px solid white;
+}
+.form-control::placeholder{
+     font-size: 20px;
     color: #ffa808d5;
+    
+}
+.submit{
+    border: none;
+    outline: none;
+    color: white;
+    background:#ffa808d5;
+    padding: 10px 30px;
+    border-radius: 10px;
+    font-size: 20px;
+    
 }
