@@ -3,7 +3,7 @@
     
 }
 .nav-link:hover{
-    background-color: hwb(39 3% 0% / 0.836);
+    background-color: #ffa808d5;
     transition: 0.5s ease-in-out;
     border-radius: 10px;
     
@@ -13,27 +13,35 @@
 
 }
 
-@media(max-width:567px){
+@media(max-width:576px){
     .navbar img{
         width: 200px;
         height: 50px;
     }
     .navbar-toggler{
-        background-color: white;
-        color:red;
-        width: 50px;
-        height: 50px;
+        background-color: #ffa808d5;
+        width: 50px !important;
+        height: 50px !important;
+        margin-right: 17px;
     }
- 
+  
     .nav-item {
         padding: 10px 0;
+        
+    }
+    .nav-item ul li{
+        color: black !important;
     }
     .navbar input{
-        width: 230px;
+        width: 300px;
         height:30px;
+        padding-bottom: 12px;
+        margin-left: 40px;
     }
     .navbar button{
-        width: 80px;
+        width: 150px;
         height: 30px ;
+        padding-bottom: 25px;
+        margin-left: 20px;
     }
 }
