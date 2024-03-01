@@ -29,11 +29,8 @@
         padding: 10px 0;
         
     }
-    .nav-item ul li{
-        color: black !important;
-    }
     .navbar input{
-        width: 300px;
+        width: 200px;
         height:30px;
         padding-bottom: 12px;
         margin-left: 40px;
@@ -42,6 +39,6 @@
         width: 150px;
         height: 30px ;
         padding-bottom: 25px;
-        margin-left: 20px;
+        margin-left: 10px;
     }
 }
