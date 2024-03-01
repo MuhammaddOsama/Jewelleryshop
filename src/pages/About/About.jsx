@@ -23,7 +23,7 @@ const About = () => {
 
  <div className="container">
   <div className="row">
-    <div className="col-lg-6 col-md-6 col-sm-6">
+    <div className="col-lg-6 col-md-6 col-sm-12">
     <div class="contactcard w-50  " >
   <img src={cardimg} class="card-img-top image-fluid" alt="..."/>
   <div class="card-body">
@@ -33,7 +33,7 @@ const About = () => {
   </div>
 </div>
     </div>
-    <div className="col-lg-6 col-md-6 col-sm-6">
+    <div className="col-lg-6 col-md-6 col-sm-12">
     <div class="contactcard w-50 " >
   <img src={cardimg} class="card-img-top" alt="..."/>
   <div class="card-body">

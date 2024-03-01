@@ -5,28 +5,61 @@
  .home img{
     height: 100%;
  }
- h2.Home{
-    font-size: 80px;
-    margin-top: 10px;
+ .Home-h2{
+    font-size: 60px;
+    margin-top: 20px;
     color: hwb(39 3% 0% / 0.836)
     ;
  }
- p.Home{
+ .Home-p{
     font-size: 25px;
     color: white;
     margin-top: 50px;
  }
 
- @media(max-width:567px){
+ @media(max-width:576px){
    .home{
-      /* background-color: white; */
+      background-color:black;
+      height: 743px;
    }
-   .home h2{
+    
+   .Home-h2{
       color: hwb(39 3% 0% / 0.836);
-      font-size: 18px;
+      font-size: 45px;
+      font-family: sans-serif;
    }
-   .home p{
-      font-size: 16px;
+   .Home-p{
+      font-size: 20px;
       text-align: justify;
+      font-family: sans-serif;
    }
+   .Home-btn{
+      font-size: 20px;
+      font-family: sans-serif;
+   }
+   
+ }
+ @media(max-width: 767px){
+   .home{
+      background-color: black;
+      height: 885px;
+   }
+    
+   .Home-h2{
+      color: hwb(39 3% 0% / 0.836);
+      font-size: 45px;
+      font-family: sans-serif;
+      padding: 25px 25px;
+   }
+   .Home-p{
+      font-size: 23px;
+      text-align: justify;
+      font-family: sans-serif;
+   }
+   .Home-btn{
+      font-size: 23px;
+      font-family: sans-serif;
+      font-weight: bold;
+   }
+   
  }

@@ -3,7 +3,7 @@ import Navbar from './components/Navbar';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Contactus from './pages/Contact/Contactus';
-import Footer from './components/Footer';
+import Footer from './components/footer/Footer';
 function App() {
   return (
     <div className="App">
@@ -13,8 +13,7 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/contactus' element={<Contactus />} />
       </Routes>
-      <Footer />
-      
+    <Footer />
       </BrowserRouter>
 
       

@@ -9,9 +9,11 @@
 }
 .Abouth2{
     color:#ffa808d5 ;
+    padding-top: 50px;
 }
 .AboutP{
     color: white;
+    padding-top: 50px;
     padding-left: 150px;
     padding-right: 150px;
     text-align: justify;
@@ -31,4 +33,11 @@ a:hover{
 }
 .Followmore{
     padding-top: 80px;
+}
+
+
+@media(max-width:567px){
+    .contactcard{
+      margin-left: 120px;
+    }
 }
