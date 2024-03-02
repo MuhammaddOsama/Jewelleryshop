@@ -10,7 +10,7 @@ const Contactus = () => {
            <div className="row justify-content-center">
             <div className="col-lg-6">
               <form className='form'>
-                <h2>Contact us</h2>
+                <h2>Leave a Comment</h2>
                 <div className="mb-5">
                   <input type='text' className="form-control text-white bg-transparent border-warning"name="name" placeholder='Enter Your Name...' />
                 </div>
