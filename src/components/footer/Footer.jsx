@@ -1,5 +1,5 @@
 import React from 'react'
-import { CiPhone } from "react-icons/ci";
+import { FaWhatsapp } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaSquareInstagram } from "react-icons/fa6";
 import { FaTwitter } from "react-icons/fa";
@@ -22,7 +22,7 @@ const Footer = () => {
                 <h4>Haroon Jeweller's</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum iusto ex, assumenda consequatur libero ipsam!</p>
                  <div className="social-icon">
-                    <span className='icons'><CiPhone /></span>
+                    <span className='icons'><FaWhatsapp /></span>
                     <span className='icons'><FaFacebook /></span>
                     <span className='icons'><FaSquareInstagram /></span>
                     <span className='icons'><FaTwitter /></span>
@@ -75,7 +75,7 @@ const Footer = () => {
         </div>
         <div className="row">
             <div className=" col-lg-12">
-                <p> &copy; designed bY M.Osama Khan</p>
+                <p> &copy; designed bY Muhammad_Osama Khan</p>
             </div>
 
         </div>

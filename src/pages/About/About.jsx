@@ -1,9 +1,5 @@
 import React from 'react'
 import './About.css'
-import { CiPhone } from "react-icons/ci";
-import { FaFacebook } from "react-icons/fa";
-import { FaSquareInstagram } from "react-icons/fa6";
-import { FaTwitter } from "react-icons/fa";
 import cardimg from "../../images/cardimg.webp"
 const About = () => {
   return (
@@ -45,21 +41,6 @@ const About = () => {
     </div>
   </div>
  </div>
-
-
-       <div className='Followmore'>
-       <h2 className='Abouth2'>
-            For more Follow us
-        </h2>
-          <div className='row'>
-            <div className='col-lg3 About'>
-                 <a href="#"><CiPhone /></a>
-                 <a href=""><FaFacebook /></a>
-                 <a href=""><FaSquareInstagram /></a>
-                 <a href=""><FaTwitter /></a>
-            </div>
-          </div>
-       </div>
      </div>
      </div>
     </>

@@ -26,8 +26,9 @@
         background-color: #ffa808d5;
         width: 50px !important;
         height: 50px !important;
-        margin-right: 17px;
+        margin-right: 15px;
         border-radius: 10px;
+        padding-right: 40px;
     }
   
     .nav-item {

@@ -61,3 +61,28 @@
     color: #ffa808d5;
     padding-right: 15px;
 }
+
+
+
+
+@media(max-width:576px){
+    .footer p{
+        padding-right: 20px;
+        font-family: sans-serif;
+    }
+ 
+ 
+ 
+    .footer-sec4 .phone{
+    justify-content: center;
+    font-weight: bold;
+ }
+ .footer-sec4 .email{
+    justify-content: center;
+    font-weight: bold;
+ }
+ .footer-sec4 .location{
+    justify-content: center;
+    font-weight: bold;
+ }
+ }
