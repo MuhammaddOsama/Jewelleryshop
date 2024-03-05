@@ -1,6 +1,26 @@
 import React from 'react'
 import "./Contactus.css"
+import { useFormik } from 'formik'
+import {FormValidation} from './FormSchema'
+
 const Contactus = () => {
+
+  const inilValues = {
+    name :" ",
+    email:"",
+    msg:""
+
+   }
+  const {handleSubmit,handleChange,errors,values, handleBlur,touched}= useFormik({
+       initialValues:inilValues,
+       validationSchema:FormValidation,
+       onSubmit:(values) =>{
+        console.log(values)
+      
+        alert("form succesfully submitedd thanks user ! :)")
+      
+       }
+  });
 
   return (
      <>
@@ -9,18 +29,23 @@ const Contactus = () => {
         <div className="container">
            <div className="row justify-content-center">
             <div className="col-lg-6">
-              <form className='form'>
+              <form className='form' onSubmit={handleSubmit}>
                 <h2>Leave a Comment</h2>
                 <div className="mb-5">
-                  <input type='text' className="form-control text-white bg-transparent border-warning"name="name" placeholder='Enter Your Name...' />
+                  <input type='text' className="form-control text-white bg-transparent border-warning"name="name" placeholder='Enter Your Name...' value={values.name} 
+                  onChange={handleChange} onBlur={handleBlur}/>
+                  {errors.name && touched.name ? <span className='text-danger'>{errors.name}</span>: null}
                 </div>
                 <div className="mb-5">
-                  <input type='text' className="form-control text-white bg-transparent border-warning"name="email" placeholder='Enter Your Email...' />
+                  <input type='text' className="form-control text-white bg-transparent border-warning"name="email" placeholder='Enter Your Email...' value={values.email} onChange={handleChange} onBlur={handleBlur}/>
+                  
+                  {errors.email && touched.email? <span className='text-danger'>{errors.email}</span>:null}
                 </div>
                 <div className="mb-5">
-                  <textarea type='text' className="form-control text-white bg-transparent border-warning"name="text" placeholder='Text here ...' />
+                  <textarea type='text' className="form-control text-white bg-transparent border-warning"name="msg" placeholder='Text here ...' value={values.msg}onChange={handleChange} onBlur={handleBlur}/>
+                  {errors.msg && touched.msg? <span className='text-danger'>{errors.msg}</span>: null}
                 </div>
-                <input className="submit " onClick={()=>alert('Form submitted Successfully')} type='submit' />
+                <input className="submit " value={"submit"} type='submit' />
               </form>
             </div>
            </div>
